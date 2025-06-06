@@ -43,7 +43,7 @@
 // ]);
 export default [
   {
-    files: ["/*.js"],
+    files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
@@ -51,6 +51,7 @@ export default [
         console: "readonly", // ✅ Tells ESLint to allow use of console
       },
     },
+    
     rules: {
       // ✅ Syntax and Safety
       "no-var": "error",
